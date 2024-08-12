@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Subscription</title>
+    <style>
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 30px;
+      }
+
+      .pricing-plan {
+        flex-grow: 1;
+        width: 400px;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .plan-price {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .plan-features li {
+        margin-bottom: 20px;
+      }
+
+      .plan-button {
+        padding: 10px;
+        background-color: #ff6600;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+      }
+
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basique</div>
+        <div class="plan-price">9,99 €/mois</div>
+        <ul class="plan-features">
+          <li>✅ 10 Go de stockage</li>
+          <li>✅ 1 utilisateur</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">S'inscrire</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">19,99 €/mois</div>
+        <ul class="plan-features">
+          <li>✅ 50 Go de stockage</li>
+          <li>✅ 5 utilisateurs</li>
+          <li>✅ Support téléphonique et par email</li>
+        </ul>
+        <button class="plan-button">S'inscrire</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">49,99 €/mois</div>
+        <ul class="plan-features">
+          <li>✅ 100 Go de stockage</li>
+          <li>✅ 10 utilisateurs</li>
+          <li>✅ Support 24/7</li>
+        </ul>
+        <button class="plan-button">S'inscrire</button>
+      </div>
+    </div>
+  </body>
+</html>

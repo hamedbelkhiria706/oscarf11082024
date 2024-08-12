@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Réservation de Table</title>
+</head>
+<body>
+    <h1>Formulaire de Réservation de Table</h1>
+    <form action="/submit_reservation" method="POST">
+        <!-- Nom complet -->
+        <label for="fullName">Nom complet :</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Téléphone -->
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <!-- Date de réservation -->
+        <label for="reservationDate">Date de réservation :</label>
+        <input type="date" id="reservationDate" name="reservationDate" required>
+        <br><br>
+
+        <!-- Heure de réservation -->
+        <label for="reservationTime">Heure de réservation :</label>
+        <input type="time" id="reservationTime" name="reservationTime" required>
+        <br><br>
+
+        <!-- Nombre de personnes -->
+        <label for="guests">Nombre de personnes :</label>
+        <select id="guests" name="guests" required>
+            <option value="1">1 personne</option>
+            <option value="2">2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5">5 personnes</option>
+            <option value="6">6 personnes</option>
+            <option value="7">7 personnes</option>
+            <option value="8">8 personnes</option>
+            <option value="9">9 personnes</option>
+            <option value="10">10 personnes</option>
+        </select>
+        <br><br>
+
+        <!-- Préférences alimentaires -->
+        <p>Préférences alimentaires :</p>
+        <input type="checkbox" id="vegetarian" name="foodPreference" value="vegetarian">
+        <label for="vegetarian">Végétarien</label>
+        <input type="checkbox" id="vegan" name="foodPreference" value="vegan">
+        <label for="vegan">Végan</label>
+        <input type="checkbox" id="glutenFree" name="foodPreference" value="glutenFree">
+        <label for="glutenFree">Sans gluten</label>
+        <input type="checkbox" id="noPreference" name="foodPreference" value="noPreference">
+        <label for="noPreference">Aucune préférence</label>
+        <br><br>
+
+        <!-- Demandes spéciales -->
+        <label for="specialRequests">Demandes spéciales :</label>
+        <textarea id="specialRequests" name="specialRequests" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Boutons -->
+        <button type="submit">Envoyer</button>
+        <button type="reset">Réinitialiser</button>
+    </form>
+</body>
+</html>

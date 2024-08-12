@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+    <style>
+      .container {
+        color: white;
+        border: 5px solid gold;
+        display: inline-flex;
+        flex-direction: column;
+      }
+
+      .container > * {
+        height: 100px;
+      }
+
+      .red {
+        background-color: #eb4d4b;
+      }
+
+      .green {
+        background-color: #6ab04c;
+      }
+
+      .blue {
+        background-color: #4834d4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="red">Red</div>
+      <div class="green">Green</div>
+      <div class="blue">Blue</div>
+    </div>
+  </body>
+</html>

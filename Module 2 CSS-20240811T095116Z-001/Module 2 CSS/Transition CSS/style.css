@@ -1,0 +1,31 @@
+/* 
+1- Ajoutez une transition CSS à la classe .box pour animer les changements de couleur et de taille.
+2- La couleur de fond doit changer de #3498db à #e74c3c sur un survol.
+3- La taille de la boîte doit augmenter de 100px x 100px à 150px x 150px sur un survol.
+4- La transition doit se dérouler sur une durée de 0.3 secondes.
+*/
+
+/* Styles généraux */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Boîte à styliser */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+  }
+  
+  .box:hover {
+    background-color: #e74c3c;
+    width: 150px;
+    height: 150px;
+  }
+  

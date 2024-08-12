@@ -1,0 +1,58 @@
+/* Style global pour la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header du profil */
+.profile-header {
+    /* Utiliser display: block */
+    /* Padding de 20px */
+    /* Bordure de 2px solide noire #000 */
+    /* Couleur de fond gris clair #f1f1f1 */
+    /* Centrer le texte */
+}
+
+/* Image du profil */
+.profile-picture img {
+    /* Utiliser display: block */
+    /* Hauteur 100px */
+    /* Centrer l'image avec margin auto et ajouter un margin en haut et en bas de 20px */
+}
+
+/* Détails du profil */
+.profile-details {
+    /* Utiliser display: block */
+    /* Padding de 15px */
+    /* Couleur de fond blanche #ffffff */
+    /* Bordure de 1px solide gris clair #ddd */
+    /* Margin en bas de 20px */
+}
+
+/* Biographie du profil */
+.profile-bio {
+    /* Utiliser display: block */
+    /* Bordure de 1px solide gris #ccc */
+    /* Padding de 20px */
+    /* Margin en haut de 20px */
+    /* Couleur de fond gris clair #f9f9f9 */
+}
+
+/* Footer du profil */
+.profile-footer a {
+    /* Utiliser display: inline-block */
+    /* Padding de 10px */
+    /* Bordure de 1px solide noire #000 */
+    /* Margin de 5px */
+    /* Couleur de fond bleue #e0f7fa */
+    /* Enlever la décoration de texte des liens */
+    /* Couleur du texte noire #000 */
+}
